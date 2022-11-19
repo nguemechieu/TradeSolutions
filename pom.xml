@@ -58,6 +58,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -81,7 +87,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                org.tradeadviser.tradesolutions/org.tradeadviser.tradesolutions.HelloApplication
+                                org.tradeadviser.tradesolutions/org.tradeadviser.tradesolutions.TradeSolutions
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
