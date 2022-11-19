@@ -20,6 +20,13 @@ import java.util.ResourceBundle;
 
 
 public class TradeSolutionsController   implements Initializable {
+    public TextField emailId;
+    public TextField firstnameId;
+    public TextField lastnameId;
+    public TextField middleNameId;
+    public Label dLbl;
+    public Button cancelId;
+    public Button registerId;
     Stage tradeSolutionsStage;
     Scene tradeSolutionsScene;
     Users users;
@@ -205,12 +212,22 @@ private     TextField usernameId;
     }
 
 
+    public void getEmail(ActionEvent event) {
+    }
 
+    public void getPassword(ActionEvent event) {
+    }
 
+    public void getMiddlenameId(ActionEvent event) {
+    }
 
+    public void getFirstname(ActionEvent event) {
+    }
 
+    public void getLastname(ActionEvent event) {
+    }
 
-
-
+    public void getRegister(ActionEvent event) {
+    }
 }
 

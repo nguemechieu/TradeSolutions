@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+<?import javafx.scene.shape.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.tradeadviser.tradesolutions.TradeSolutionsController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane id="welcomeId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            opacity="0.7" prefHeight="780.0" prefWidth="1580.0" style="-fx-background-color: #253111;"
+            styleClass="Welcome" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <MenuButton layoutX="28.0" layoutY="625.0" mnemonicParsing="false" text="MenuButton">
+   <items>
+       <MenuItem mnemonicParsing="false" text="Action 1"/>
+       <MenuItem mnemonicParsing="false" text="Action 2"/>
+   </items>
+    </MenuButton>
+    <ToolBar layoutX="14.0" layoutY="19.0" prefHeight="45.0" prefWidth="1238.0">
+        <MenuBar prefHeight="32.0" prefWidth="551.0">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" text="Close"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <MenuItem mnemonicParsing="false" text="Delete"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem mnemonicParsing="false" text="About"/>
+            </Menu>
+        </MenuBar>
+    </ToolBar>
+    <Button layoutX="265.0" layoutY="631.0" mnemonicParsing="false" text="Button"/>
+    <SplitPane dividerPositions="0.5508155583437893" layoutX="443.0" layoutY="101.0" prefHeight="685.0"
+               prefWidth="799.0">
+      <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"/>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"/>
+      </items>
+    </SplitPane>
+    <Label fx:id="timeId" layoutX="96.0" layoutY="200.0" text="time:"/>
 </AnchorPane>
